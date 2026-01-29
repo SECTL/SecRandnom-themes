@@ -45,3 +45,9 @@ banner: banner.png              # 横幅图片路径（可选）
 }
 ```
 
+### 源代码参照
+主要源代码页面请参照以下链接：
+- **点名页面**：https://github.com/SECTL/SecRandom/blob/master/app/view/main/roll_call.py
+- **抽奖页面**：https://github.com/SECTL/SecRandom/blob/master/app/view/main/lottery.py
+
+**注意：如果使用HTML将无法接入SecRandom的通用函数。**
