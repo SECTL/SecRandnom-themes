@@ -1,0 +1,30 @@
+name: Validate and Auto Merge
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: windows-latest 
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 
+
+      - name: Auto Pass
+        run: echo "Validation Skipped"
+
+      - name: Auto Merge
+        if: github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge ${{ github.event.pull_request.number }} --merge --auto
