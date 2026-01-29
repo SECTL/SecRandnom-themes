@@ -8,8 +8,8 @@
 
 ```yaml
 id: lzy98276.testrollcalltheme  # 主题唯一 ID
-name: TestRollcallTheme         # 主题名称
-description: 点名界面主题(测试)   # 主题描述
+name: 点名界面主题(测试)           # 主题主题
+description: 仅限测试使用！       # 主题描述
 url: https://github.com/lzy98276/TestRollcallTheme # 主题项目主页 URL
 author: lzy98276                # 作者名称
 version: 1.0.0                  # 主题版本
@@ -22,3 +22,16 @@ banner: banner.png              # 横幅图片路径（可选）
 ```
 
 提交 Pull Request 后，系统会自动进行格式检查并自动合并。
+
+## 主题规范
+
+### 文件类型限制
+主题仅支持包含以下类型的文件：
+- Python (`.py`)
+- HTML (`.html`)
+
+### 目录结构要求
+根据主题功能类型，请将文件存放在对应文件夹中：
+- **点名页面**：存放在主题ID文件夹下的 `Roll_call_page` 目录
+- **抽奖页面**：存放在主题ID文件夹下的 `Lottery_page` 目录
+
