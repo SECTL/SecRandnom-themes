@@ -35,3 +35,13 @@ banner: banner.png              # 横幅图片路径（可选）
 - **点名页面**：存放在主题ID文件夹下的 `Roll_call_page` 目录
 - **抽奖页面**：存放在主题ID文件夹下的 `Lottery_page` 目录
 
+主题ID文件夹下还需放置一个包含版本号和主题ID的JSON文件，文件名为 `manifest.json`：
+
+```json
+{
+  "id": "lzy98276.testrollcalltheme",
+  "version": "1.0.0",
+  "url": "https://github.com/lzy98276/TestRollcallTheme"
+}
+```
+
